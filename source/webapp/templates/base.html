@@ -22,12 +22,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="{% url 'article_list' %}" class="nav-link">Articles</a>
+                    <a href="{% url 'article_list' %}" class="nav-link">Main</a>
                 </li>
                 {% block menu %}
-                <li class="nav-item">
-                    <a href="{% url 'author_list' %}" class="nav-link">Authors</a>
-                </li>
                 {% endblock %}
             </ul>
         </div>
