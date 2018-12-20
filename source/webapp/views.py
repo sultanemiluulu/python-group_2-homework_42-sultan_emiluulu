@@ -1,6 +1,6 @@
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView
 from webapp.models import Client, Article, Comment, Rating
-from webapp.forms import SearchArticleForm, ArticleCreateForm, ArticleUpdateForm, CommentCreateForm
+from webapp.forms import SearchArticleForm, ArticleCreateForm, ArticleUpdateForm, CommentCreateForm, CommentUpdateForm
 from django.urls import reverse_lazy
 
 
@@ -40,6 +40,13 @@ class CommentCreateView(CreateView):
     model = Comment
     template_name = 'comment_create.html'
     form_class = CommentCreateForm
+    success_url = reverse_lazy('article_list')
+
+
+class CommentUpdateView(UpdateView):
+    model = Comment
+    template_name = 'comment_update.html'
+    form_class = CommentUpdateForm
     success_url = reverse_lazy('article_list')
 
 

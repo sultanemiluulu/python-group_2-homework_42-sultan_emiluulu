@@ -30,7 +30,8 @@
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
                     <p>{{ comment.comment }}</p>
-                    <footer class="blockquote-footer">Author: <cite title="Source Title">{{ comment.author }}</cite>
+                    <a href="{% url 'comment_update' comment.pk %}" class="btn btn-primary">Update</a>
+                    <footer class="blockquote-footer mt-3">Author: <cite title="Source Title">{{ comment.author }}</cite>
                     </footer>
                 </blockquote>
             </div>
