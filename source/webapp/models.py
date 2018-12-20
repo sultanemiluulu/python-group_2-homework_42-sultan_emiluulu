@@ -16,3 +16,8 @@ class Article(models.Model):
 
     def __str__(self):
         return "%s. %s" % (self.pk, self.headline)
+
+
+class Comment(models.Model):
+    comment = models.TextField(max_length=500, null=False, blank=False, verbose_name='Comment')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Created time')
