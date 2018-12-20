@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Author List{% endblock %}
+{% block content %}
+    <div class="row">
+    {% for client in client_list %}
+        <div class="col-md-6">
+        <div class="card mt-4">
+            <div class="card-header">
+                {{ client.pk }} : Author
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ client.name }}</h5>
+                {% if client.email %}<p class="card-text">{{ client.email }}</p>{% else %}{% endif %}
+                <a href="{% url 'author_detail' client.pk %}" class="btn btn-primary">Read next</a>
+            </div>
+        </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

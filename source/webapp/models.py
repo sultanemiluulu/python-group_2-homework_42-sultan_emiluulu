@@ -30,6 +30,7 @@ class Comment(models.Model):
     def __str__(self):
         return "%s: %s -- %s" % (self.article.headline, self.author.name, self.comment)
 
+
 class Rating(models.Model):
     STATUS_TERRIBLY = 'Ужас'
     STATUS_POORLY = 'Не очень'
@@ -44,6 +45,7 @@ class Rating(models.Model):
         (STATUS_GOOD, 'Жакшы'),
         (STATUS_EXCELLENT, 'Зынк')
     )
+
     author = models.ForeignKey(Client, related_name='article_rating', on_delete=models.PROTECT, verbose_name='Author')
     article = models.ForeignKey(Article, related_name='client_rating', on_delete=models.PROTECT, verbose_name='Article')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Created time')
