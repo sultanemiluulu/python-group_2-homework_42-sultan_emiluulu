@@ -1,0 +1,773 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "webapp",
+    "model": "rating"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "webapp",
+    "model": "client"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "webapp",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "webapp",
+    "model": "article"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jiyge3ceswvuq1zr7ckwckyxq0c5xww8",
+  "fields": {
+    "session_data": "YjgyMDE0Zjc1Y2QzNDA1ZThkZWZmOTFiMGM3ZDY0YTA4NjVmYTVlMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI2MjJlODcwN2JiYTRmMWYxMjA2Y2NmOTE5OWRlZTJjN2I2N2Y4ODkxIn0=",
+    "expire_date": "2019-01-03T08:23:55.360Z"
+  }
+},
+{
+  "model": "webapp.client",
+  "pk": 1,
+  "fields": {
+    "name": "John Doe",
+    "email": null,
+    "password": "123qwerty",
+    "favorites": []
+  }
+},
+{
+  "model": "webapp.client",
+  "pk": 2,
+  "fields": {
+    "name": "\u0412\u0430\u0441\u044f \u041f\u0443\u043f\u043a\u0438\u043d",
+    "email": null,
+    "password": "283602",
+    "favorites": []
+  }
+},
+{
+  "model": "webapp.client",
+  "pk": 3,
+  "fields": {
+    "name": "\u041c\u0430\u0439\u043e\u0440 \u041f\u0435\u0439\u043d",
+    "email": null,
+    "password": "\u043f\u0435\u0439\u043d\u0440\u0443\u043b\u0435\u0434",
+    "favorites": []
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 1,
+  "fields": {
+    "headline": "\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 228.",
+    "author": 1,
+    "text": "\u041d\u0435\u0437\u0430\u043a\u043e\u043d\u043d\u044b\u0435 \u043f\u0440\u0438\u043e\u0431\u0440\u0435\u0442\u0435\u043d\u0438\u0435, \u0445\u0440\u0430\u043d\u0435\u043d\u0438\u0435, \u043f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430, \u0438\u0437\u0433\u043e\u0442\u043e\u0432\u043b\u0435\u043d\u0438\u0435, \u043f\u0435\u0440\u0435\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u043d\u0430\u0440\u043a\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432, \u043f\u0441\u0438\u0445\u043e\u0442\u0440\u043e\u043f\u043d\u044b\u0445 \u0432\u0435\u0449\u0435\u0441\u0442\u0432 \u0438\u043b\u0438 \u0438\u0445 \u0430\u043d\u0430\u043b\u043e\u0433\u043e\u0432, \u0430 \u0442\u0430\u043a\u0436\u0435 \u043d\u0435\u0437\u0430\u043a\u043e\u043d\u043d\u044b\u0435 \u043f\u0440\u0438\u043e\u0431\u0440\u0435\u0442\u0435\u043d\u0438\u0435, \u0445\u0440\u0430\u043d\u0435\u043d\u0438\u0435, \u043f\u0435\u0440\u0435\u0432\u043e\u0437\u043a\u0430 \u0440\u0430\u0441\u0442\u0435\u043d\u0438\u0439, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u0445 \u043d\u0430\u0440\u043a\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0438\u043b\u0438 \u043f\u0441\u0438\u0445\u043e\u0442\u0440\u043e\u043f\u043d\u044b\u0435 \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430, \u043b\u0438\u0431\u043e \u0438\u0445 \u0447\u0430\u0441\u0442\u0435\u0439, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u0445 \u043d\u0430\u0440\u043a\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0438\u043b\u0438 \u043f\u0441\u0438\u0445\u043e\u0442\u0440\u043e\u043f\u043d\u044b\u0435 \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430",
+    "created_at": "2018-12-20T08:26:19.282Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 2,
+  "fields": {
+    "headline": "\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 158. \u041a\u0440\u0430\u0436\u0430",
+    "author": 2,
+    "text": "1. \u041a\u0440\u0430\u0436\u0430, \u0442\u043e \u0435\u0441\u0442\u044c \u0442\u0430\u0439\u043d\u043e\u0435 \u0445\u0438\u0449\u0435\u043d\u0438\u0435 \u0447\u0443\u0436\u043e\u0433\u043e \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430, -\r\n\u043d\u0430\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0448\u0442\u0440\u0430\u0444\u043e\u043c \u0432 \u0440\u0430\u0437\u043c\u0435\u0440\u0435 \u0434\u043e \u0432\u043e\u0441\u044c\u043c\u0438\u0434\u0435\u0441\u044f\u0442\u0438 \u0442\u044b\u0441\u044f\u0447 \u0440\u0443\u0431\u043b\u0435\u0439 \u0438\u043b\u0438 \u0432 \u0440\u0430\u0437\u043c\u0435\u0440\u0435 \u0437\u0430\u0440\u0430\u0431\u043e\u0442\u043d\u043e\u0439 \u043f\u043b\u0430\u0442\u044b \u0438\u043b\u0438 \u0438\u043d\u043e\u0433\u043e \u0434\u043e\u0445\u043e\u0434\u0430 \u043e\u0441\u0443\u0436\u0434\u0435\u043d\u043d\u043e\u0433\u043e \u0437\u0430 \u043f\u0435\u0440\u0438\u043e\u0434 \u0434\u043e \u0448\u0435\u0441\u0442\u0438 \u043c\u0435\u0441\u044f\u0446\u0435\u0432, \u043b\u0438\u0431\u043e \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u0440\u0430\u0431\u043e\u0442\u0430\u043c\u0438 \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u0442\u0440\u0435\u0445\u0441\u043e\u0442 \u0448\u0435\u0441\u0442\u0438\u0434\u0435\u0441\u044f\u0442\u0438 \u0447\u0430\u0441\u043e\u0432, \u043b\u0438\u0431\u043e \u0438\u0441\u043f\u0440\u0430\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u0440\u0430\u0431\u043e\u0442\u0430\u043c\u0438 \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u043e\u0434\u043d\u043e\u0433\u043e \u0433\u043e\u0434\u0430, \u043b\u0438\u0431\u043e \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u0435\u043c \u0441\u0432\u043e\u0431\u043e\u0434\u044b \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u0434\u0432\u0443\u0445 \u043b\u0435\u0442, \u043b\u0438\u0431\u043e \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u0440\u0430\u0431\u043e\u0442\u0430\u043c\u0438 \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u0434\u0432\u0443\u0445 \u043b\u0435\u0442, \u043b\u0438\u0431\u043e \u0430\u0440\u0435\u0441\u0442\u043e\u043c \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u0447\u0435\u0442\u044b\u0440\u0435\u0445 \u043c\u0435\u0441\u044f\u0446\u0435\u0432, \u043b\u0438\u0431\u043e \u043b\u0438\u0448\u0435\u043d\u0438\u0435\u043c \u0441\u0432\u043e\u0431\u043e\u0434\u044b \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u0434\u0432\u0443\u0445 \u043b\u0435\u0442.\r\n(\u0432 \u0440\u0435\u0434. \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0437\u0430\u043a\u043e\u043d\u0430 \u043e\u0442 07.12.2011 N 420-\u0424\u0417)\r\n(\u0441\u043c. \u0442\u0435\u043a\u0441\u0442 \u0432 \u043f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0435\u0439 \u0440\u0435\u0434\u0430\u043a\u0446\u0438\u0438)\r\n2. \u041a\u0440\u0430\u0436\u0430, \u0441\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u0430\u044f:\r\n\u0430) \u0433\u0440\u0443\u043f\u043f\u043e\u0439 \u043b\u0438\u0446 \u043f\u043e \u043f\u0440\u0435\u0434\u0432\u0430\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0433\u043e\u0432\u043e\u0440\u0443;\r\n\u0431) \u0441 \u043d\u0435\u0437\u0430\u043a\u043e\u043d\u043d\u044b\u043c \u043f\u0440\u043e\u043d\u0438\u043a\u043d\u043e\u0432\u0435\u043d\u0438\u0435\u043c \u0432 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0435 \u043b\u0438\u0431\u043e \u0438\u043d\u043e\u0435 \u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0435;\r\n\u0432) \u0441 \u043f\u0440\u0438\u0447\u0438\u043d\u0435\u043d\u0438\u0435\u043c \u0437\u043d\u0430\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0433\u043e \u0443\u0449\u0435\u0440\u0431\u0430 \u0433\u0440\u0430\u0436\u0434\u0430\u043d\u0438\u043d\u0443;\r\n\u0433) \u0438\u0437 \u043e\u0434\u0435\u0436\u0434\u044b, \u0441\u0443\u043c\u043a\u0438 \u0438\u043b\u0438 \u0434\u0440\u0443\u0433\u043e\u0439 \u0440\u0443\u0447\u043d\u043e\u0439 \u043a\u043b\u0430\u0434\u0438, \u043d\u0430\u0445\u043e\u0434\u0438\u0432\u0448\u0438\u0445\u0441\u044f \u043f\u0440\u0438 \u043f\u043e\u0442\u0435\u0440\u043f\u0435\u0432\u0448\u0435\u043c, -\r\n\u043d\u0430\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0448\u0442\u0440\u0430\u0444\u043e\u043c \u0432 \u0440\u0430\u0437\u043c\u0435\u0440\u0435 \u0434\u043e \u0434\u0432\u0443\u0445\u0441\u043e\u0442 \u0442\u044b\u0441\u044f\u0447 \u0440\u0443\u0431\u043b\u0435\u0439 \u0438\u043b\u0438 \u0432 \u0440\u0430\u0437\u043c\u0435\u0440\u0435 \u0437\u0430\u0440\u0430\u0431\u043e\u0442\u043d\u043e\u0439 \u043f\u043b\u0430\u0442\u044b \u0438\u043b\u0438 \u0438\u043d\u043e\u0433\u043e \u0434\u043e\u0445\u043e\u0434\u0430 \u043e\u0441\u0443\u0436\u0434\u0435\u043d\u043d\u043e\u0433\u043e \u0437\u0430 \u043f\u0435\u0440\u0438\u043e\u0434 \u0434\u043e \u0432\u043e\u0441\u0435\u043c\u043d\u0430\u0434\u0446\u0430\u0442\u0438 \u043c\u0435\u0441\u044f\u0446\u0435\u0432, \u043b\u0438\u0431\u043e \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u0440\u0430\u0431\u043e\u0442\u0430\u043c\u0438 \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u0447\u0435\u0442\u044b\u0440\u0435\u0445\u0441\u043e\u0442 \u0432\u043e\u0441\u044c\u043c\u0438\u0434\u0435\u0441\u044f\u0442\u0438 \u0447\u0430\u0441\u043e\u0432, \u043b\u0438\u0431\u043e \u0438\u0441\u043f\u0440\u0430\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u0440\u0430\u0431\u043e\u0442\u0430\u043c\u0438 \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u0434\u0432\u0443\u0445 \u043b\u0435\u0442, \u043b\u0438\u0431\u043e \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u0440\u0430\u0431\u043e\u0442\u0430\u043c\u0438 \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u043f\u044f\u0442\u0438 \u043b\u0435\u0442 \u0441 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u0435\u043c \u0441\u0432\u043e\u0431\u043e\u0434\u044b \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u043e\u0434\u043d\u043e\u0433\u043e \u0433\u043e\u0434\u0430 \u0438\u043b\u0438 \u0431\u0435\u0437 \u0442\u0430\u043a\u043e\u0432\u043e\u0433\u043e, \u043b\u0438\u0431\u043e \u043b\u0438\u0448\u0435\u043d\u0438\u0435\u043c \u0441\u0432\u043e\u0431\u043e\u0434\u044b \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u043f\u044f\u0442\u0438 \u043b\u0435\u0442 \u0441 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u0435\u043c \u0441\u0432\u043e\u0431\u043e\u0434\u044b \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u043e\u0434\u043d\u043e\u0433\u043e \u0433\u043e\u0434\u0430 \u0438\u043b\u0438 \u0431\u0435\u0437 \u0442\u0430\u043a\u043e\u0432\u043e\u0433\u043e.",
+    "created_at": "2018-12-20T08:27:37.015Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 3,
+  "fields": {
+    "headline": "\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 105. \u0423\u0431\u0438\u0439\u0441\u0442\u0432\u043e",
+    "author": 3,
+    "text": "\u0423\u0431\u0438\u0439\u0441\u0442\u0432\u043e, \u0442\u043e \u0435\u0441\u0442\u044c \u0443\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0435 \u043f\u0440\u0438\u0447\u0438\u043d\u0435\u043d\u0438\u0435 \u0441\u043c\u0435\u0440\u0442\u0438 \u0434\u0440\u0443\u0433\u043e\u043c\u0443 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0443, -\r\n\u043d\u0430\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043b\u0438\u0448\u0435\u043d\u0438\u0435\u043c \u0441\u0432\u043e\u0431\u043e\u0434\u044b \u043d\u0430 \u0441\u0440\u043e\u043a \u043e\u0442 \u0448\u0435\u0441\u0442\u0438 \u0434\u043e \u043f\u044f\u0442\u043d\u0430\u0434\u0446\u0430\u0442\u0438 \u043b\u0435\u0442 \u0441 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u0435\u043c \u0441\u0432\u043e\u0431\u043e\u0434\u044b \u043d\u0430 \u0441\u0440\u043e\u043a \u0434\u043e \u0434\u0432\u0443\u0445 \u043b\u0435\u0442 \u043b\u0438\u0431\u043e \u0431\u0435\u0437 \u0442\u0430\u043a\u043e\u0432\u043e\u0433\u043e.",
+    "created_at": "2018-12-20T08:28:31.664Z"
+  }
+},
+{
+  "model": "webapp.comment",
+  "pk": 1,
+  "fields": {
+    "comment": "\u041d\u0435\u043b\u044c\u0437\u044f \u0432\u043e\u0440\u043e\u0432\u0430\u0442\u044c!",
+    "created_at": "2018-12-20T08:29:31.777Z",
+    "author": 1,
+    "article": 2,
+    "answer_on_comment": 2
+  }
+},
+{
+  "model": "webapp.comment",
+  "pk": 2,
+  "fields": {
+    "comment": "\u0421\u043e\u0433\u043b\u0430\u0441\u0435\u043d \u0434\u0440\u0443\u0433 \u043c\u043e\u0439",
+    "created_at": "2018-12-20T08:30:06.688Z",
+    "author": 2,
+    "article": 2,
+    "answer_on_comment": null
+  }
+},
+{
+  "model": "webapp.comment",
+  "pk": 3,
+  "fields": {
+    "comment": "Why not??",
+    "created_at": "2018-12-20T08:30:40.579Z",
+    "author": 1,
+    "article": 1,
+    "answer_on_comment": 3
+  }
+},
+{
+  "model": "webapp.rating",
+  "pk": 1,
+  "fields": {
+    "author": 2,
+    "article": 1,
+    "created_at": "2018-12-20T08:31:26.528Z",
+    "status": "\u0417\u044b\u043d\u043a"
+  }
+},
+{
+  "model": "webapp.rating",
+  "pk": 2,
+  "fields": {
+    "author": 3,
+    "article": 2,
+    "created_at": "2018-12-20T08:31:38.278Z",
+    "status": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+  }
+},
+{
+  "model": "webapp.rating",
+  "pk": 3,
+  "fields": {
+    "author": 1,
+    "article": 3,
+    "created_at": "2018-12-20T08:31:48.990Z",
+    "status": "\u0423\u0436\u0430\u0441"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add rating",
+    "content_type": 7,
+    "codename": "add_rating"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change rating",
+    "content_type": 7,
+    "codename": "change_rating"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete rating",
+    "content_type": 7,
+    "codename": "delete_rating"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view rating",
+    "content_type": 7,
+    "codename": "view_rating"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add client",
+    "content_type": 8,
+    "codename": "add_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change client",
+    "content_type": 8,
+    "codename": "change_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete client",
+    "content_type": 8,
+    "codename": "delete_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view client",
+    "content_type": 8,
+    "codename": "view_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 9,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 9,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 9,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 9,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add article",
+    "content_type": 10,
+    "codename": "add_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change article",
+    "content_type": 10,
+    "codename": "change_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete article",
+    "content_type": 10,
+    "codename": "delete_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view article",
+    "content_type": 10,
+    "codename": "view_article"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$o6gRsXTixYJ7$GuuDIAXSpIN2Ym4u89JTCpE12raDYWA0j9WxYt1jhY8=",
+    "last_login": "2018-12-20T08:23:55.352Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2018-12-20T07:45:35.793Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2018-12-20T08:24:29.650Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "John Doe",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2018-12-20T08:24:46.311Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "\u0412\u0430\u0441\u044f \u041f\u0443\u043f\u043a\u0438\u043d",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2018-12-20T08:25:24.513Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "\u041c\u0430\u0439\u043e\u0440 \u041f\u0435\u0439\u043d",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2018-12-20T08:26:19.284Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "1. \u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 228.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2018-12-20T08:27:37.017Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2. \u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 158. \u041a\u0440\u0430\u0436\u0430",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2018-12-20T08:28:31.666Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3. \u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 105. \u0423\u0431\u0438\u0439\u0441\u0442\u0432\u043e",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2018-12-20T08:29:31.778Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 158. \u041a\u0440\u0430\u0436\u0430: John Doe -- \u041d\u0435\u043b\u044c\u0437\u044f \u0432\u043e\u0440\u043e\u0432\u0430\u0442\u044c!",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2018-12-20T08:30:06.689Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 158. \u041a\u0440\u0430\u0436\u0430: \u0412\u0430\u0441\u044f \u041f\u0443\u043f\u043a\u0438\u043d -- \u0421\u043e\u0433\u043b\u0430\u0441\u0435\u043d \u0434\u0440\u0443\u0433 \u043c\u043e\u0439",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2018-12-20T08:30:09.283Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 158. \u041a\u0440\u0430\u0436\u0430: John Doe -- \u041d\u0435\u043b\u044c\u0437\u044f \u0432\u043e\u0440\u043e\u0432\u0430\u0442\u044c!",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"answer_on_comment\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2018-12-20T08:30:40.580Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 228.: \u041c\u0430\u0439\u043e\u0440 \u041f\u0435\u0439\u043d -- Legalize it!",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2018-12-20T08:31:04.834Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 228.: John Doe -- Why not??",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"comment\", \"author\", \"answer_on_comment\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2018-12-20T08:31:26.529Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "1.\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 228. -- \u0417\u044b\u043d\u043a",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2018-12-20T08:31:38.279Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "2.\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 158. \u041a\u0440\u0430\u0436\u0430 -- \u041d\u0435 \u043e\u0447\u0435\u043d\u044c",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2018-12-20T08:31:48.991Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "3.\u0423\u041a \u0420\u0424 \u0421\u0442\u0430\u0442\u044c\u044f 105. \u0423\u0431\u0438\u0439\u0441\u0442\u0432\u043e -- \u0423\u0436\u0430\u0441",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
