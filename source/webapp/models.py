@@ -23,4 +23,10 @@ class Article(models.Model):
 class Comment(models.Model):
     comment = models.TextField(max_length=500, null=False, blank=False, verbose_name='Comment')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Created time')
+    author = models.ForeignKey(Client, related_name='comments', on_delete=models.CASCADE, verbose_name='Author')
+    article = models.ForeignKey(Article, related_name='comments', on_delete=models.PROTECT, verbose_name='Article')
+    answer_on_comment = models.ForeignKey('self', blank=True, null=True, related_name='comments',
+                                          on_delete=models.PROTECT, verbose_name='Answer')
+    def __str__(self):
+        return "%s: %s -- %s" % (self.article.headline, self.author.name, self.comment)
 
